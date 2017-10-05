@@ -1,3 +1,9 @@
+#Allen Higgins C00197373
+#Zoltan Fuzesi C00197361
+#Robert Scully C00196960
+
+
+
 from tabula import convert_into
 from PyPDF2 import PdfFileReader
 
