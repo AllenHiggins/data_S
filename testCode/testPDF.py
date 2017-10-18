@@ -2,18 +2,15 @@
 #Zoltan Fuzesi C00197361
 #Robert Scully C00196960
 
-
-
 from tabula import convert_into
 from PyPDF2 import PdfFileReader
 
-#filename = raw_input('Enter PDF file Name to convert to CSV (ie; myFile):-->')
-filename = 'Make_Model_data_2016' + '.pdf'
-outputFileName = filename + '.csv'
+filename = raw_input('Enter PDF file Name to convert to CSV:--> ')
 
 try:
     reader = PdfFileReader(filename, 'r')
     totalPages = reader.getNumPages()
-    convert_into(filename, outputFileName, output_format="csv", pages=range(1,totalPages))
+    outputFileName = filename[0:-4] + '.csv'
+    convert_into(filename, outputFileName, output_format="csv", pages=range(2,totalPages))
 except Exception as e:
      print('File not found. Please check name of file or if the file has been created')
