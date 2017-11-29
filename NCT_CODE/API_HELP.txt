@@ -1,0 +1,45 @@
+Local:
+http://localhost/loginapplication/nct/sqlMake?sql=select * from nct_mmyf
+
+http://localhost/loginapplication/nct/sqlMake?sql=select * from nct_mmyf where mmyf_make="Alfa Romeo" and mmyf_model="BRERA" and mmyf_yob=2007
+
+http://localhost/loginapplication/nct/sqlMake?sql=select * from nct_mmyf where mmyf_fail>50
+
+http://localhost/loginapplication/nct/sqlMake?sql=select mmyf_id, mmyf_brake_test, mmyf_breaking_equipment, mmyf_make from nct_mmyf where mmyf_fail=1.0
+
+http://localhost/loginapplication/nct/sqlCenter?sql=select * from nct_pfrtc
+
+Cloud:
+base context path:
+http://serversite.info:8080/NCT_API/nct/nct
+Save:
+http://serversite.info:8080/NCT_API/nct/CAR?
+http://serversite.info:8080/NCT_API/nct/CTR?
+
+SQl queries:
+http://serversite.info:8080/NCT_API/nct/sqlmake?sql=select * from nct_mmyf
+
+http://serversite.info:8080/NCT_API/nct/sqlmake?sql=SELECT * FROM nct_mmyf order by mmyf_total desc
+
+
+
+http://serversite.info:8080/NCT_API/nct/sqlCenter?sql=select * from nct_pfrtc
+
+
+**************************************************************************************************
+SQL queries:
+select count(mmyf_id) from nct_mmyf
+
+select count(pfrtc_id) from nct_pfrtc
+
+select mmyf_make from nct_mmyf where mmyf_suspension_test>10 
+
+
+http://localhost/loginapplication/nct/sqlMake?sql=select count(mmyf_id) from nct_mmyf
+
+
+
+
+TRY*********************
+
+http://localhost/loginapplication/nct/sqlMake?sql=select mmyf_id, mmyf_make from nct_mmyf where nct_mmyf.mmyf_suspension_test>10 

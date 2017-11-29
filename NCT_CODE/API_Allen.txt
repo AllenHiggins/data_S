@@ -1,0 +1,14 @@
+
+Base
+http://serversite.info:8080/NCT_API/nct/CAR
+http://serversite.info:8080/NCT_API/nct/CTR
+
+
+
+
+
+http://serversite.info:8080/NCT_API/nct/sqlmake
+
+http://serversite.info:8080/NCT_API/nct/sqlCenter
+
+http://serversite.info:8080/NCT_API/nct/sqlCenter?sql=select * from nct_pfrtc
